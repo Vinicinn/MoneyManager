@@ -2,7 +2,6 @@ function firstload() {
     /* It's getting the value of the localStorage and putting it in the div. */
     bkp_articles = JSON.parse(localStorage.getItem("cards"))
     if (bkp_articles != null) {
-        console.log("entrou")
         let div_new = document.createElement('div')
         div_new.innerHTML = bkp_articles
         document.querySelector('div').innerHTML = div_new.innerHTML
